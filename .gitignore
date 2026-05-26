@@ -25,3 +25,6 @@ __pycache__/
 
 # Local clones of upstream MCP (install separately)
 tools/meraki-magic-mcp-community/
+
+# Bundled gh download (optional)
+.cache/

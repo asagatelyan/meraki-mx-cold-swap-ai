@@ -94,6 +94,9 @@ customer backups in issues or PRs.
 
 See [SECURITY.md](SECURITY.md). CI runs secret scanning on push/PR.
 
+**First-time publish:** a GitHub PAT needs **`repo`** and **`workflow`** scopes (classic) so
+`.github/workflows/secret-scan.yml` can be pushed. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ---
 
 ## Changelog

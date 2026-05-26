@@ -2,6 +2,12 @@
 
 Thank you for improving **meraki-mx-cold-swap-ai**.
 
+## Publishing / pushing with a PAT
+
+Classic token scopes: **`repo`** + **`workflow`** (required for GitHub Actions in this repo).
+
+Fine-grained: **Contents** Read/Write + **Workflows** Read/Write (and **Metadata** Read).
+
 ## Before you open a PR
 
 1. Read [DISCLAIMER.md](DISCLAIMER.md) and [AGENTS.md](AGENTS.md).
