@@ -30,7 +30,7 @@ against Meraki's table for your exact SKUs).
 ### 1. Clone and configure
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USER/meraki-mx-cold-swap-ai.git
+git clone https://github.com/asagatelyan/meraki-mx-cold-swap-ai.git
 cd meraki-mx-cold-swap-ai
 cp .env.example .env
 # Edit .env — never commit it

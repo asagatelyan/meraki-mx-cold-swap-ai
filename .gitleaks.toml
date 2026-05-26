@@ -12,7 +12,7 @@ paths = [
   '''CONTRIBUTING.md''',
 ]
 regexes = [
-  '''YOUR_GITHUB_USER''',
+  '''asagatelyan''',
   '''L_000000000000000000''',
   '''Q2XX-AAAA-BBBB''',
   '''Q2YY-CCCC-DDDD''',

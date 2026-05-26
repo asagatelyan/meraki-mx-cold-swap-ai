@@ -19,4 +19,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CONTRIBUTING.md, SECURITY.md, GitHub Actions gitleaks workflow
 - Example Phase 0 summary (synthetic IDs only)
 
-[0.1.0]: https://github.com/YOUR_GITHUB_USER/meraki-mx-cold-swap-ai/releases/tag/v0.1.0
+[0.1.0]: https://github.com/asagatelyan/meraki-mx-cold-swap-ai/releases/tag/v0.1.0
