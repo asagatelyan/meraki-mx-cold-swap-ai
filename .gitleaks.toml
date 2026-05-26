@@ -1,0 +1,20 @@
+title = "meraki-mx-cold-swap-ai gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Synthetic examples and placeholders"
+paths = [
+  '''examples/''',
+  '''docs/intake.yaml''',
+  '''prompts/start-wizard.md''',
+  '''CONTRIBUTING.md''',
+]
+regexes = [
+  '''YOUR_GITHUB_USER''',
+  '''L_000000000000000000''',
+  '''Q2XX-AAAA-BBBB''',
+  '''Q2YY-CCCC-DDDD''',
+  '''Q2XX-XXXX-XXXX''',
+]

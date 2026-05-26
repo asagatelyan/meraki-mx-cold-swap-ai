@@ -1,0 +1,21 @@
+meraki-mx-cold-swap-ai
+
+Copyright (c) 2026 meraki-mx-cold-swap-ai contributors
+
+Attribution preference (not a additional license term):
+
+If you redistribute this repository, or ship a product or paid offering whose
+primary value is this wizard, playbook, or agent instructions, please:
+
+- Credit the project: https://github.com/YOUR_GITHUB_USER/meraki-mx-cold-swap-ai
+- Link to this repository in your documentation or NOTICE file
+- Preserve the MIT license and copyright notice in copies
+
+This project is not affiliated with, endorsed by, or sponsored by Cisco Systems,
+Inc. or Meraki.
+
+Meraki Magic MCP is a separate project:
+https://github.com/CiscoDevNet/meraki-magic-mcp-community
+
+Official Meraki MX cold-swap documentation:
+https://documentation.meraki.com/SASE_and_SD-WAN/MX/Operate_and_Maintain/How-Tos/MX_Cold_Swap_-_Replacing_an_Existing_MX_with_a_Different_MX

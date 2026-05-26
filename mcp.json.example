@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "Meraki_Magic_MCP": {
+      "command": "/ABSOLUTE/PATH/meraki-mx-cold-swap-ai/tools/meraki-magic-mcp-community/.venv/bin/python",
+      "args": [
+        "/ABSOLUTE/PATH/meraki-mx-cold-swap-ai/tools/meraki-magic-mcp-community/meraki-mcp-dynamic.py"
+      ]
+    }
+  }
+}

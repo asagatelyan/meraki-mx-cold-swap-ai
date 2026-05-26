@@ -1,0 +1,41 @@
+# Required context before Phase 0 (READ).
+# The agent should collect these fields and echo them back for confirmation.
+
+required:
+  organization_id: ""          # e.g. "123456"
+  organization_name: ""
+  network_id: ""               # e.g. "L_000000000000000000"
+  network_name: ""
+  old_mx:
+    model: ""                  # e.g. "MX67W"
+    serial: ""                 # e.g. "Q2XX-XXXX-XXXX"
+  new_mx:
+    model: ""                  # e.g. "MX68WC"
+    serial: ""
+  combined_network: null       # true | false — MX + MS/MR/MV/MT in same Dashboard site
+  wan:
+    wan1: "dhcp"               # dhcp | static
+    wan2: "none"               # none | dhcp | static
+    static_notes: ""           # remind: local status page may be required
+  vpn:
+    site_to_site: false
+    autovpn_hub_or_spoke: ""   # none | hub | spoke | both
+  anyconnect_custom_cert: false
+  maintenance_window: ""
+
+optional:
+  rogue_dhcp_upstream: false
+  cellular_wwan_on_new_mx: false   # MX68C/WC family
+  poe_downstream_on_mx_ports: false
+  config_template_bound: false
+  preferred_method: ""               # auto | method1 | method2 — agent may override per rules
+
+path_selection_rules:
+  combined_network:
+    default: method1
+    method2_requires_ack:
+      - split_and_recombine_complexity
+      - autovpn_ddns_client_history_tradeoffs
+  appliance_only:
+    default: method1
+    method2_when: minimal_mx_downtime_and_staging_possible
