@@ -8,6 +8,24 @@ model** (cold swap), using the Dashboard API via **Meraki Magic MCP** when avail
 **This repo:** read `docs/intake.yaml`, then `docs/playbook.md`. For combined-network
 Method 2 pitfalls, read `docs/combined-network-method2.md` and `docs/lessons-learned.md`.
 
+**First-time setup:** if Meraki Magic MCP is not installed or configured, run **Bootstrap**
+(`docs/agent-bootstrap.md`) before the migration wizard. No migration WRITEs during bootstrap.
+
+---
+
+## Bootstrap (first run only)
+
+When the user asks to set up the project, paste the bootstrap prompt, or MCP is missing:
+
+1. Follow `docs/agent-bootstrap.md` step by step (terminal allowed).
+2. Ask for `MERAKI_API_KEY` / `MERAKI_ORG_ID`; write to local `.env` only — never commit.
+3. Install upstream MCP under `tools/meraki-magic-mcp-community/`.
+4. Write host MCP config (e.g. `.cursor/mcp.json`) with absolute paths.
+5. Stop and wait for user to **enable MCP + reload** host.
+6. Verify with a READ-only MCP call, then continue to **Opening dialog** below.
+
+If bootstrap is already done, skip to Opening dialog.
+
 ---
 
 ## Hard rules

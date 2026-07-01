@@ -5,9 +5,10 @@ alwaysApply: false
 
 # Meraki MX cold-swap wizard (Cursor)
 
-When the user migrates an MX (cold swap / different model) or asks for this workflow:
+When the user migrates an MX (cold swap / different model), asks to set up this repo, or pastes the bootstrap prompt:
 
-1. Follow **[AGENTS.md](../../AGENTS.md)** (hard rules, phases, path selection).
+1. If MCP not ready → **[docs/agent-bootstrap.md](../../docs/agent-bootstrap.md)** first.
+2. Follow **[AGENTS.md](../../AGENTS.md)** (hard rules, phases, path selection).
 2. Use **[docs/playbook.md](../../docs/playbook.md)** and **[docs/intake.yaml](../../docs/intake.yaml)**.
 3. Install/use **Meraki Magic MCP** per **[docs/mcp-setup.md](../../docs/mcp-setup.md)**.
 4. Optional skill: `skills/meraki-mx-cold-swap/SKILL.md`.

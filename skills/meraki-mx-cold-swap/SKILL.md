@@ -1,9 +1,9 @@
 ---
 name: meraki-mx-cold-swap
 description: >-
-  Step-by-step Meraki MX cold-swap wizard (replace MX with a different model) using
-  Meraki Magic MCP. Use when the user migrates MX hardware, cold swap, EOS replacement,
-  MX67W to MX68WC, combined network split/recombine, or asks for Meraki MX migration help.
+  Meraki MX cold-swap wizard: bootstrap (install MCP) + migration phases. Use when the user
+  sets up this repo, migrates MX hardware, cold swap, EOS replacement, MX67W to MX68WC,
+  combined network split/recombine, or asks for Meraki MX migration help.
 ---
 
 # Meraki MX cold-swap wizard
@@ -15,6 +15,8 @@ description: >-
 
 ## Instructions
 
+0. **First run / no MCP?** Follow **[docs/agent-bootstrap.md](../../docs/agent-bootstrap.md)**.
+   One-shot user prompt: **[prompts/bootstrap-and-wizard.md](../../prompts/bootstrap-and-wizard.md)**.
 1. Read **[AGENTS.md](../../AGENTS.md)** and follow it as the primary behavior contract.
 2. Collect intake from **[docs/intake.yaml](../../docs/intake.yaml)**; confirm back to the user.
 3. Run **Phase 0 READ** before any write; summarize in a table.
@@ -41,6 +43,7 @@ https://documentation.meraki.com/SASE_and_SD-WAN/MX/Operate_and_Maintain/How-Tos
 - Never bulk-move MS/MR/MV/MT on combined Method 2
 - See **[DISCLAIMER.md](../../DISCLAIMER.md)**
 
-## Starter prompt
+## Starter prompts
 
-See **[prompts/start-wizard.md](../../prompts/start-wizard.md)**
+- **Bootstrap + wizard:** **[prompts/bootstrap-and-wizard.md](../../prompts/bootstrap-and-wizard.md)**
+- **Wizard only (MCP ready):** **[prompts/start-wizard.md](../../prompts/start-wizard.md)**

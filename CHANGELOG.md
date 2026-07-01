@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-05-26
+
+### Added
+
+- AI-first README: one-shot bootstrap + wizard prompt on main page
+- `docs/agent-bootstrap.md`, `docs/manual-setup.md`, `docs/what-is-the-agent.md`
+- `prompts/bootstrap-and-wizard.md`
+- Bootstrap section in `AGENTS.md`
+
+### Changed
+
+- Manual 3-step setup moved to `docs/manual-setup.md` (still available)
+
 ## [0.1.0] - 2026-05-26
 
 ### Added
